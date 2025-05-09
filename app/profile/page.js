@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Profile() {
   return (
@@ -10,7 +11,9 @@ export default function Profile() {
           animate={{ opacity: 1, scale: 1 }}
           src="/images/vincent_1.jpg"
           alt="Profile"
-          className="w-48 h-48 rounded-full mx-auto mb-6 object-cover"
+          width={300} // Specify the width
+          height={300} // Specify the height
+          className=" rounded-full mx-auto mb-6 object-cover"
         />
         <motion.h1
           initial={{ opacity: 0 }}
