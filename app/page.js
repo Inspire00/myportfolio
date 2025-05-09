@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -63,10 +64,12 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-96 object-cover"
+                  width={300} // Specify the width
+                  height={300} // Specify the height
+                  
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
