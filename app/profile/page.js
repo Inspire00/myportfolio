@@ -1,20 +1,23 @@
-'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function Profile() {
   return (
-    <main className="min-h-screen bg-gray-100 py-12">
+    <main className="min-h-screen bg-gray-100 py-12">
       <div className="container mx-auto text-center">
-        <motion.img
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          src="/images/vincent_1.jpg"
-          alt="Profile"
-          width={300} // Specify the width
-          height={300} // Specify the height
-          className=" rounded-full mx-auto mb-6 object-cover"
-        />
+          className="rounded-full mx-auto mb-6 object-cover"
+        >
+          <Image
+            src="/images/vincent_1.jpg"
+            alt="Profile"
+            width={300}
+            height={300}
+            className="rounded-full"
+          />
+        </motion.div>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -28,7 +31,7 @@ export default function Profile() {
           transition={{ delay: 0.2 }}
           className="text-lg max-w-2xl mx-auto mb-6"
         >
-          I'm a passionate app developer with expertise in React Native for mobile apps
+          I\'m a passionate app developer with expertise in React Native for mobile apps
           and Next.js for web applications. With years of experience, I craft user-friendly
           and innovative solutions tailored to client needs.
         </motion.p>
