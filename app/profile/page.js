@@ -32,8 +32,8 @@ export default function Profile() {
           transition={{ delay: 0.2 }}
           className="text-lg max-w-2xl mx-auto mb-6"
         >
-          I\'m a passionate app developer with expertise in React Native for mobile apps
-          and Next.js for web applications. With years of experience, I craft user-friendly
+          Vincent is a passionate app developer with expertise in React Native for mobile apps
+          and Next.js for web applications. With years of experience I craft user-friendly
           and innovative solutions tailored to client needs.
         </motion.p>
         <motion.div
