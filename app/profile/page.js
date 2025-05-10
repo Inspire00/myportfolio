@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+'use client';
+import { motion } from 'framer-motion'; // Named export
 import Image from 'next/image';
 
 export default function Profile() {
