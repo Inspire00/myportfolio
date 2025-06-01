@@ -18,7 +18,13 @@ export default function ProjectDetailContent({ project }) {
             animate={{ opacity: 1, x: 0 }}
             className="bg-white rounded-lg shadow-lg p-6"
           >
-            <video src={project.video} controls className="w-full max-w-[640px] h-[360px] rounded-lg mx-auto object-contain" />
+            <video
+              src={project.video}
+              autoPlay
+              muted // Ensures autoplay works in most browsers
+              controls
+              className="w-full max-w-[640px] h-[360px] rounded-lg mx-auto object-contain"
+            />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}

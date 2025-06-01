@@ -4,34 +4,33 @@ import { motion } from 'framer-motion';
 const packages = [
   {
     title: 'Basic Package',
-    price: '$2,000',
+    price: 'R15,000',
     features: [
-      'Single platform app (iOS or Android)',
-      'Up to 5 screens',
-      'Basic backend integration',
-      '1 month support',
+      'Single platform app (Android)',
+      'Up to 8 screens',
+      'No backend integration',
+      '6 months support',
     ],
   },
   {
     title: 'Standard Package',
-    price: '$5,000',
+    price: 'R25,000',
     features: [
-      'Cross-platform app (iOS & Android)',
-      'Up to 10 screens',
-      'Advanced backend integration',
-      'Push notifications',
-      '3 months support',
+      'Single-platform app (Android)',
+      'Up to 12 screens',
+      'Backend databse integration',
+      '9 months support',
     ],
   },
   {
     title: 'Premium Package',
-    price: '$10,000+',
+    price: 'R70,000+',
     features: [
-      'Cross-platform app + web app',
+      'Single platform app + web app',
       'Unlimited screens',
       'Full backend integration',
       'Analytics & notifications',
-      '6 months support',
+      '12 months support',
     ],
   },
 ];
@@ -64,7 +63,7 @@ export default function Services() {
                 ))}
               </ul>
               <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-                Contact Me
+                Contact Me: vinnyatsa2@gmail.com
               </button>
             </motion.div>
           ))}

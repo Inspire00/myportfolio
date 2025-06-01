@@ -8,6 +8,7 @@ const projects = [
     id: 1,
     title: 'Onside Events Admin',
     type: 'Mobile & Web App',
+    website: 'https://onsideventsadmin.vercel.app/',
     image: '/images/Onside.jpg',
     description: 'Administration apps that aim to make operations more efficient, effevtive,trackable and measurable.',
     slug: 'onside-events',
